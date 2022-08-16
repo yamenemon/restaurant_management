@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-
 enum KColor {
   primary,
+  baseColor,
   secondary,
   accent,
   red,
@@ -28,20 +28,22 @@ extension KColorExtention on KColor {
     switch (this) {
       case KColor.primary:
         return Colors.blue;
+      case KColor.baseColor:
+        return Color(0xFFFC8019);
       case KColor.secondary:
-        return Color(0xff5EA7FF);
+        return Color(0xFFC8161D);
       case KColor.accent:
         return Colors.blue;
       case KColor.red:
         return Color(0xffE42B2B);
       case KColor.grey:
-        return Color.fromARGB(255, 157, 157, 157);
+        return Color(0xFF808080);
       case KColor.addbtn:
         return Color(0xFFA8CFFF);
       case KColor.black:
         return Colors.black;
       case KColor.divider:
-        return Color(0xffE6E6E6);
+        return Color(0xFFF8F8F7);
       case KColor.enableBorder:
         return Color(0xffE0E0E0);
       case KColor.fill:

@@ -1,9 +1,10 @@
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../utils/styles/styles.dart';
 
 class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final Color backgroundColor = KColor.secondary.color;
+  Color? backgroundColor = KColor.secondary.color;
   final String title;
   final bool? centerTitle;
   final List<Widget>? actions;
@@ -13,6 +14,7 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.title,
     this.centerTitle,
     this.actions,
+    this.backgroundColor,
   }) : super(key: key);
 
   @override
@@ -37,6 +39,3 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => new Size.fromHeight(56.h);
 }
-
-
- 

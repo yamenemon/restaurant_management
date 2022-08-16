@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:restaurant_management/utils/navigation_service.dart';
 import 'package:restaurant_management/utils/styles/styles.dart';
 
@@ -80,19 +81,18 @@ class ViewUtil {
       builder: (BuildContext context) {
         // return object of type Dialog.
         return AlertDialog(
-            backgroundColor: alertBackgroundColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: borderRadius ??
-                  BorderRadius.all(
-                    Radius.circular(8.w),
-                  ),
-            ),
-            title: title == null ? null : Text(title),
-            content: content,
-            actions: actions,);
+          backgroundColor: alertBackgroundColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: borderRadius ??
+                BorderRadius.all(
+                  Radius.circular(8.w),
+                ),
+          ),
+          title: title == null ? null : Text(title),
+          content: content,
+          actions: actions,
+        );
       },
     );
   }
 }
-
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:restaurant_management/utils/styles/k_text_style.dart';
 import 'package:restaurant_management/utils/styles/styles.dart';
 
@@ -129,6 +130,3 @@ class GlobalTextFormField extends StatelessWidget {
     );
   }
 }
-
-
- 
