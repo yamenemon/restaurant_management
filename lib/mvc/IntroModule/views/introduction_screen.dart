@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:restaurant_management/mvc/module_name/views/components/intro_left.dart';
-import 'package:restaurant_management/mvc/module_name/views/components/intro_right.dart';
-import 'package:restaurant_management/mvc/module_name/views/menu_list_screen.dart';
+import 'package:restaurant_management/mvc/IntroModule/views/components/intro_left.dart';
+import 'package:restaurant_management/mvc/IntroModule/views/components/intro_right.dart';
+import 'package:restaurant_management/mvc/IntroModule/views/menu_list_screen.dart';
 import 'package:restaurant_management/utils/extention.dart';
 import 'package:restaurant_management/utils/navigation_service.dart';
 import 'package:restaurant_management/utils/styles/k_colors.dart';
@@ -42,7 +42,7 @@ class IntroductionScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
                 child: Text(
                   "LETS GET START",
-                  style: GoogleFonts.roboto(
+                  style: GoogleFonts.inter(
                       fontSize: 18.sp,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),

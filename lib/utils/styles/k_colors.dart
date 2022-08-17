@@ -21,6 +21,7 @@ enum KColor {
   drawerHeader,
   dropDownfill,
   bookingText,
+  spinshGrey,
 }
 
 extension KColorExtention on KColor {
@@ -32,6 +33,8 @@ extension KColorExtention on KColor {
         return Color(0xFFFC8019);
       case KColor.secondary:
         return Color(0xFFC8161D);
+      case KColor.spinshGrey:
+        return Color(0xFF9F9F9E);
       case KColor.accent:
         return Colors.blue;
       case KColor.red:

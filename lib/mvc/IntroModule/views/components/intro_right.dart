@@ -23,7 +23,7 @@ class IntroRight extends StatelessWidget {
               flex: 1,
               child: Text(
                 "Description",
-                style: GoogleFonts.roboto(
+                style: GoogleFonts.inter(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
                 ),
@@ -42,7 +42,7 @@ class IntroRight extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Text("Meals",
-                  style: GoogleFonts.roboto(
+                  style: GoogleFonts.inter(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                   )),

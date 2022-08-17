@@ -4,8 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:restaurant_management/data_provider/pref_helper.dart';
-import 'package:restaurant_management/mvc/module_name/views/introduction_screen.dart';
-import 'package:restaurant_management/mvc/module_name/views/menu_list_screen.dart';
+import 'package:restaurant_management/mvc/IntroModule/views/menu_list_screen.dart';
 import 'package:restaurant_management/utils/navigation_service.dart';
 import 'package:restaurant_management/utils/styles/styles.dart';
 import 'package:restaurant_management/constant/app_url.dart';
@@ -74,7 +73,7 @@ class MyApp extends StatelessWidget {
               //globally handle progress color using themeData class
               progressIndicatorTheme:
                   ProgressIndicatorThemeData(color: Colors.green),
-              textTheme: GoogleFonts.robotoMonoTextTheme(),
+              textTheme: GoogleFonts.interTextTheme(),
               primaryColor: KColor.primary.color,
               visualDensity: VisualDensity.adaptivePlatformDensity,
               colorScheme: ThemeData().colorScheme.copyWith(
